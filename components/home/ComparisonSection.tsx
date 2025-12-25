@@ -3,40 +3,52 @@ import Link from 'next/link';
 export default function ComparisonSection() {
   const comparisons = [
     {
-      aspect: 'Time Orientation',
-      traditional: 'Backward-looking',
-      mifir: 'Future-ready',
-      icon: '🕐'
-    },
-    {
-      aspect: 'Primary Focus',
-      traditional: 'Input-heavy (resources)',
-      mifir: 'Process & culture-driven',
+      aspect: 'What It Measures',
+      traditional: 'Historical reputation & legacy',
+      mifir: 'Future capability & readiness',
       icon: '🎯'
     },
     {
-      aspect: 'Foundation',
-      traditional: 'Reputation-based',
-      mifir: 'Integrity-based',
-      icon: '🏛️'
+      aspect: 'Evidence Base',
+      traditional: 'Self-reported data & surveys',
+      mifir: 'Audited budgets & documents',
+      icon: '📋'
     },
     {
-      aspect: 'Gaming Risk',
-      traditional: 'Easily gamed',
-      mifir: 'Audit & evidence-driven',
+      aspect: 'Innovation',
+      traditional: 'Penalizes risk & failure',
+      mifir: 'Rewards experimentation',
+      icon: '🚀'
+    },
+    {
+      aspect: 'Research Quality',
+      traditional: 'Publication volume',
+      mifir: 'Societal relevance & integrity',
+      icon: '🔬'
+    },
+    {
+      aspect: 'Governance',
+      traditional: 'Ignored or superficial',
+      mifir: 'Core evaluation domain',
+      icon: '⚖️'
+    },
+    {
+      aspect: 'Gaming Resistance',
+      traditional: 'Easily manipulated',
+      mifir: 'Evidence-verification required',
       icon: '🔒'
     },
     {
-      aspect: 'Metrics Priority',
-      traditional: 'Quantitative only',
-      mifir: 'Qualitative + Quantitative',
-      icon: '📊'
+      aspect: 'Student Outcomes',
+      traditional: 'Short-term placement rates',
+      mifir: 'Lifelong adaptability & ethics',
+      icon: '🌱'
     },
     {
-      aspect: 'Success Measure',
-      traditional: 'Placement rates',
-      mifir: 'Long-term impact',
-      icon: '🌱'
+      aspect: 'Ethical Leadership',
+      traditional: 'Not assessed',
+      mifir: 'Central to evaluation',
+      icon: '✨'
     }
   ];
 
@@ -46,13 +58,13 @@ export default function ComparisonSection() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-            A Fundamental Shift
+            Not Another Ranking System
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            What Makes MIFIR Different
+            MIFIR vs. Traditional Rankings
           </h2>
           <p className="text-lg text-gray-600">
-            We're not just another ranking system. We're a fundamentally different approach to evaluating educational excellence.
+            A fundamental paradigm shift in how we evaluate institutional quality, capacity, and readiness for the future.
           </p>
         </div>
 

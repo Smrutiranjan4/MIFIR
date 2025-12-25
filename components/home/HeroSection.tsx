@@ -19,22 +19,22 @@ export default function HeroSection() {
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>A New Standard in Higher Education Evaluation</span>
+              <span>Global Launch 2025 – Built for the 2030–2040 Reality</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Measuring What <span className="text-blue-900 relative">
-                Truly Matters
+              Ranking Institutions by <span className="text-blue-900 relative">
+                Future Capability
                 <svg className="absolute -bottom-2 left-0 w-full h-3 text-blue-200" viewBox="0 0 200 12" preserveAspectRatio="none">
                   <path d="M0,7 Q50,2 100,7 T200,7" fill="none" stroke="currentColor" strokeWidth="4"/>
                 </svg>
-              </span> in Higher Education
+              </span>, Not Past Reputation
             </h1>
 
             {/* Sub-text */}
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-              A future-oriented ranking framework focused on <strong>intellectual vitality</strong>, <strong>pedagogical courage</strong>, <strong>integrity</strong>, and <strong>long-term impact</strong> — not marketing metrics.
+              MIFIR measures what institutions are <strong>committing resources to</strong>, what they are <strong>building systems for</strong>, and whether they are <strong>prepared to educate for a future</strong> none of us can predict. Evidence-based. Future-oriented. Reform-driven.
             </p>
 
             {/* CTAs */}
@@ -82,8 +82,8 @@ export default function HeroSection() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Intellectual Vitality</h3>
-                    <p className="text-sm text-gray-600">Beyond publication counts</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">Governance & Future-Readiness</h3>
+                    <p className="text-sm text-gray-600">Not vision documents, actual budgets</p>
                   </div>
                 </div>
 
@@ -94,8 +94,8 @@ export default function HeroSection() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Integrity-Driven</h3>
-                    <p className="text-sm text-gray-600">Evidence-based assessment</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">Innovation Depth</h3>
+                    <p className="text-sm text-gray-600">Learning from failure, not just success</p>
                   </div>
                 </div>
 
@@ -106,8 +106,8 @@ export default function HeroSection() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Future-Ready</h3>
-                    <p className="text-sm text-gray-600">Long-term impact focus</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">Technology Integration</h3>
+                    <p className="text-sm text-gray-600">Embedded in curriculum, not showrooms</p>
                   </div>
                 </div>
 
@@ -118,8 +118,8 @@ export default function HeroSection() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Pedagogical Courage</h3>
-                    <p className="text-sm text-gray-600">Innovation in teaching</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">Ethical Leadership</h3>
+                    <p className="text-sm text-gray-600">Action on commitments, not intent</p>
                   </div>
                 </div>
               </div>

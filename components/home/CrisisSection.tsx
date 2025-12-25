@@ -1,8 +1,8 @@
 export default function CrisisSection() {
   const crises = [
     {
-      title: 'Ranking Manipulation',
-      description: 'Institutions gaming metrics instead of improving education',
+      title: 'Legacy Metrics Don\'t Predict Future Capability',
+      description: 'Historical reputation, alumni wealth, and citation volume tell us nothing about whether an institution can educate for 2035.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -11,31 +11,32 @@ export default function CrisisSection() {
       color: 'from-red-500 to-red-600'
     },
     {
-      title: 'Publication Quantity over Quality',
-      description: 'Chasing numbers at the expense of meaningful research',
+      title: 'Optics Over Outcomes',
+      description: 'Glossy brochures, symbolic committees, and dormant MOUs distract from genuine systemic reform and resource allocation.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
         </svg>
       ),
       color: 'from-orange-500 to-orange-600'
     },
     {
-      title: 'Placement Obsession',
-      description: 'Short-term job metrics overshadow lifelong learning',
+      title: 'Ranking Manipulation as Strategy',
+      description: 'Institutions game metrics instead of investing in teaching quality, research integrity, or student support systems.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
         </svg>
       ),
       color: 'from-amber-500 to-amber-600'
     },
     {
-      title: 'Infrastructure Showmanship',
-      description: 'Impressive buildings masking educational substance',
+      title: 'No Signal for Risk-Taking or Innovation',
+      description: 'Current systems penalize experimentation, pedagogical courage, and failure-learning—exactly what the future demands.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
         </svg>
       ),
       color: 'from-yellow-500 to-yellow-600'
@@ -48,10 +49,10 @@ export default function CrisisSection() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            The Crisis MIFIR Responds To
+            Why Traditional Rankings Fail the Future
           </h2>
           <p className="text-lg text-gray-600">
-            Higher education rankings have lost their way. It's time to redirect focus to what truly builds excellent institutions.
+            The global higher-education landscape is measured by systems designed for the 20th century. Students, employers, and policymakers need a new signal—one that reveals institutional capacity for navigating uncertainty.
           </p>
         </div>
 
@@ -91,11 +92,11 @@ export default function CrisisSection() {
             <svg className="w-12 h-12 text-blue-300 mx-auto mb-4 opacity-50" fill="currentColor" viewBox="0 0 24 24">
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
             </svg>
-            <blockquote className="text-2xl md:text-3xl font-semibold text-white mb-4 leading-relaxed">
-              What we measure shapes what institutions become.
+            <blockquote className="text-xl md:text-2xl font-semibold text-white mb-4 leading-relaxed">
+              Reputation measures the past. MIFIR measures readiness for the future no one can predict.
             </blockquote>
             <p className="text-blue-200 text-sm">
-              Let's measure what truly matters for the future of education.
+              Universities cannot rely on century-old prestige when the world demands adaptability, ethics, and innovation.
             </p>
           </div>
         </div>
