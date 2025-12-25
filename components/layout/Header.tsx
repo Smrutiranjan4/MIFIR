@@ -48,10 +48,10 @@ export default function Header() {
             <Image 
               src={logo}   
               alt="MIFIR - Most Innovative & Futuristic Institutional Ranking" 
-              width={280} 
-              height={60}
+              width={300} 
+              height={170}
               className={`w-auto transition-all duration-300 ${
-                isScrolled ? 'h-12 lg:h-14' : 'h-16 lg:h-[60px]'
+                isScrolled ? 'h-12 lg:h-[170px]' : 'h-16 lg:h-[170px]'
               }`}
               priority
             />

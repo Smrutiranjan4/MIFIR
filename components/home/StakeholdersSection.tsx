@@ -1,6 +1,19 @@
+'use client';
+
+import { useEffect } from 'react';
 import Link from 'next/link';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function StakeholdersSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  }, []);
+
   const stakeholders = [
     {
       title: "Students & Families",
@@ -31,7 +44,7 @@ export default function StakeholdersSection() {
   return (
     <section className="py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white">
       <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{ maxWidth: '1360px' }}>
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             For Every Stakeholder
           </h2>
@@ -46,6 +59,8 @@ export default function StakeholdersSection() {
               key={index}
               href={stakeholder.link}
               className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition-all transform hover:-translate-y-2 border border-white/20"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
               <div className="text-5xl mb-4">{stakeholder.icon}</div>
               <h3 className="text-2xl font-bold mb-4 group-hover:text-blue-300 transition-colors">

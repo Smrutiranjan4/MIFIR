@@ -1,4 +1,18 @@
+'use client';
+
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 export default function AlignmentSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  }, []);
+
   const standards = [
     {
       title: 'Interdisciplinarity',
@@ -53,7 +67,7 @@ export default function AlignmentSection() {
 
       <div className="relative mx-auto px-4 sm:px-6 lg:px-8" style={{ maxWidth: '1360px' }}>
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
           <div className="inline-block bg-blue-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
             Global Standards Alignment
           </div>
@@ -71,6 +85,8 @@ export default function AlignmentSection() {
             <div 
               key={index}
               className="group bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all duration-300 border border-white/20 hover:border-white/40 transform hover:-translate-y-1"
+              data-aos="fade-up"
+              data-aos-delay={index * 50}
             >
               <div className="text-4xl mb-4 transform group-hover:scale-110 transition-transform">
                 {standard.icon}

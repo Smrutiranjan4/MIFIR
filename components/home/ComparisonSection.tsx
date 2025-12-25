@@ -1,42 +1,67 @@
+'use client';
+
+import { useEffect } from 'react';
 import Link from 'next/link';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function ComparisonSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  }, []);
+
   const comparisons = [
     {
-      aspect: 'Time Orientation',
-      traditional: 'Backward-looking',
-      mifir: 'Future-ready',
-      icon: '🕐'
-    },
-    {
-      aspect: 'Primary Focus',
-      traditional: 'Input-heavy (resources)',
-      mifir: 'Process & culture-driven',
+      aspect: 'What It Measures',
+      traditional: 'Historical reputation & legacy',
+      mifir: 'Future capability & readiness',
       icon: '🎯'
     },
     {
-      aspect: 'Foundation',
-      traditional: 'Reputation-based',
-      mifir: 'Integrity-based',
-      icon: '🏛️'
+      aspect: 'Evidence Base',
+      traditional: 'Self-reported data & surveys',
+      mifir: 'Audited budgets & documents',
+      icon: '📋'
     },
     {
-      aspect: 'Gaming Risk',
-      traditional: 'Easily gamed',
-      mifir: 'Audit & evidence-driven',
+      aspect: 'Innovation',
+      traditional: 'Penalizes risk & failure',
+      mifir: 'Rewards experimentation',
+      icon: '🚀'
+    },
+    {
+      aspect: 'Research Quality',
+      traditional: 'Publication volume',
+      mifir: 'Societal relevance & integrity',
+      icon: '🔬'
+    },
+    {
+      aspect: 'Governance',
+      traditional: 'Ignored or superficial',
+      mifir: 'Core evaluation domain',
+      icon: '⚖️'
+    },
+    {
+      aspect: 'Gaming Resistance',
+      traditional: 'Easily manipulated',
+      mifir: 'Evidence-verification required',
       icon: '🔒'
     },
     {
-      aspect: 'Metrics Priority',
-      traditional: 'Quantitative only',
-      mifir: 'Qualitative + Quantitative',
-      icon: '📊'
+      aspect: 'Student Outcomes',
+      traditional: 'Short-term placement rates',
+      mifir: 'Lifelong adaptability & ethics',
+      icon: '🌱'
     },
     {
-      aspect: 'Success Measure',
-      traditional: 'Placement rates',
-      mifir: 'Long-term impact',
-      icon: '🌱'
+      aspect: 'Ethical Leadership',
+      traditional: 'Not assessed',
+      mifir: 'Central to evaluation',
+      icon: '✨'
     }
   ];
 
@@ -44,20 +69,20 @@ export default function ComparisonSection() {
     <section className="py-20 bg-white">
       <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{ maxWidth: '1360px' }}>
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
           <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-            A Fundamental Shift
+            Not Another Ranking System
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            What Makes MIFIR Different
+            MIFIR vs. Traditional Rankings
           </h2>
           <p className="text-lg text-gray-600">
-            We're not just another ranking system. We're a fundamentally different approach to evaluating educational excellence.
+            A fundamental paradigm shift in how we evaluate institutional quality, capacity, and readiness for the future.
           </p>
         </div>
 
         {/* Comparison Table */}
-        <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl shadow-xl overflow-hidden">
+        <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl shadow-xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
           {/* Table Header */}
           <div className="grid grid-cols-3 gap-4 p-6 md:p-8 bg-gradient-to-r from-gray-900 to-blue-900 text-white">
             <div className="text-sm md:text-base font-semibold"></div>

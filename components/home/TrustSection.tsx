@@ -1,4 +1,18 @@
+'use client';
+
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 export default function TrustSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  }, []);
+
   const trustElements = [
     {
       title: "Independent & Non-Profit",
@@ -61,7 +75,7 @@ export default function TrustSection() {
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{ maxWidth: '1360px' }}>
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
           <div className="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
             Built on Trust
           </div>
@@ -79,6 +93,8 @@ export default function TrustSection() {
             <div 
               key={index}
               className="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 p-8 border border-gray-100 hover:border-green-200 transform hover:-translate-y-1"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
               <div className="text-green-600 mb-4 transform group-hover:scale-110 transition-transform">
                 {element.icon}
